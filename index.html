@@ -134,6 +134,29 @@
             color: #ccc;
             font-size: 0.8em;
         }
+        .notification {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #161b22;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            width: 80%;
+            text-align: center;
+        }
+        .notification h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #4cb9ff;
+        }
+        .notification p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            color: #ccc;
+        }
     </style>
 </head>
 <body>
@@ -142,12 +165,16 @@
     </header>
 
     <div class="container">
-        <a href="#" class="download-button" onclick="showWarning()">Notify Me When Ready</a>
+        <!-- Empty space for notification -->
+        <div class="notification">
+            <h2>Notify Me When Ready</h2>
+            <p>We'll notify you once this page is ready.</p>
+        </div>
     </div>
 
     <footer>
-        <p>&copy; 2024 Your Company Name. All rights reserved.</p>
-        <p class="support-email">For support, contact us at support@example.com</p>
+        <p>&copy; 2024 DodgyWare. All rights reserved.</p>
+        <p class="support-email">For support, contact us at dodgysoftware@proton.me</p>
     </footer>
 
     <!-- Warning Box -->
